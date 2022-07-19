@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/scss/style.css" rel="stylesheet">
+    <title>Location de voiture</title>
+      
+      <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+      <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+      <!--Font Awesome (added because you use icons in your prepend/append)-->
+      <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+      <!-- Inline CSS based on choices in "Settings" tab -->
+      <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+         
+</head>
+<body>
+  <header>
+    <div class="container-fluid p-0 ">
+  <div class="view d-flex flex-column" style="background-image: url('img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 700px;width: 100%;">
+  <!-- menu burger-->
+  <nav class="navbar navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-light">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Louer une voiture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Louer un utilitaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Réserver un chauffeur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Découvrez nos agences </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mon compte </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- menu burger -->
+  <!-- titre -->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 ">
+        <h1 class="text-light text-center display-2 fwtitle">Bienvenue à bord</h1>
+        <h3 class="text-light text-center fwtitle">Location de voiture 24h/24 7j/7</h3>
+      </div>
+    </div>
+  </div>
+  <!-- titre -->
+  <!-- formulaire -->
+  <div class="container-fluid h-100 d-flex flex-column justify-content-end mb-5  p-0" id="blocform">
+    <div class="row me-4 ms-4 d-flex">
+    <div id="bgopa" class="col-12 col-lg-6 justify-content-center align-items-center d-flex">
+
+    
+    
+    <!-- formulaire ligne2 -->
+    
+    <div id="bgopanone" class="bootstrap-iso">
+         <form  class="row mt-2" method="post">
+          <div class="form-group col-12 col-sm-4 ">
+            <div class="dropdown ">
+              <div class="btn btn-white bg-white col-12 d-flex mt-2 bg-muted justify-content-between">      
+                <span class="m-0  text-black">Adresse de départ</span>
+                <div class="btn-dark dropdown-toggle"></div> 
+              </div>
+              </div>
+          </div>
+          <div class="form-group col-12 col-sm-4 mt-2">
+           <div class="input-group">
+            <input class="form-control" id="date1" name="date" placeholder="début de location" type="text"/>
+            <div class="input-group-addon">  
+             <i class="fa fa-calendar">
+             </i>
+            </div>  
+           </div>
+          </div>
+          <div class="form-group col-12 col-sm-4 mt-2">
+            <div class="input-group">
+             <input class="form-control" id="date" name="date" placeholder="fin de location" type="text"/>
+             <div class="input-group-addon">  
+              <i class="fa fa-calendar">
+              </i>
+             </div>  
+            </div>
+           </div>
+           
+         </form>
+
+
+      </div>
+      </div>
+        <!-- formulaire ligne3 -->
+        <div class=" col-12 col-lg-6 justify-content-center d-flex p-0 ">
+         <button class="btn col-12  rounded-0" id="submbtn" name="submit" type="submit">
+          Valider ma recherche
+         </button>
+        </div>
+        </div>
+       </div>
+      
+      <!-- formulaire ligne 3 -->
+      
+       
+    </div>
+  </div>
+  <!-- formulaire fin-->
+</header>
+
+<h3 class="mt-3 ms-3">7 résultat</h3>
+<div class="dropdown d-flex justify-content-end me-2 mb-5">
+  <button id= "ddbtn" class="btn-sm dropdown-toggle rounded border border-dark p-2" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Prix Croissant
+  </button>
+</div>
+
+
+<div class="container-fluid">
+  <!-- START une case img + desc + BTN -->
+  <div class="row d-flex align-items-center mb-5">
+    <div class="col-1 flecheleft"><img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/45/45050.png" alt="fleche gauche">
+    </div>
+    <div class="col-6 col-lg-4">
+      <img class="col-12" src="img/vehicule1.png" alt="photo de voiture"> 
+    </div>
+    <div class="col-1"> <img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/254/254434.png" alt="fleche droite">
+    </div>
+    <div class="col-4 col-lg-6 justify-content-start align-items-center pe-2 btnfindepage">
+      <div class="row descpcar">
+      <div class="col-12"><h3>Peugeot 208</h3></div>
+      <div class="col-12"><p> Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p></div>
+      <p>999€ - Agence de Paris</p>
+    </div>
+    <button class="btn-sm rounded border border-dark p-2 envoibutton" type="submit"> Reserver et payer</button> 
+    </div>
+  </div>
+ <!-- end une case img + desc + BTN -->
+   <!-- START une case img + desc + BTN -->
+   <div class="row d-flex align-items-center mb-5">
+    <div class="col-1 flecheleft"><img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/45/45050.png" alt="fleche gauche">
+    </div>
+    <div class="col-6 col-lg-4">
+      <img class="col-12" src="img/vehicule2.png" alt="photo de voiture"> 
+    </div>
+    <div class="col-1"> <img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/254/254434.png" alt="fleche droite">
+    </div>
+    <div class="col-4 col-lg-6 justify-content-start align-items-center pe-2 btnfindepage">
+      <div class="row descpcar">
+      <div class="col-12"><h3>Ford Focus</h3></div>
+      <div class="col-12"><p> Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p></div>
+      <p>999€ - Agence de Paris</p>
+    </div>
+    <button class="btn-sm rounded border border-dark p-2 envoibutton" type="submit"> Reserver et payer</button> 
+    </div>
+  </div>
+ <!-- end une case img + desc + BTN -->
+   <!-- START une case img + desc + BTN -->
+   <div class="row d-flex align-items-center mb-5">
+    <div class="col-1 flecheleft"><img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/45/45050.png" alt="fleche gauche">
+    </div>
+    <div class="col-6 col-lg-4">
+      <img class="col-12" src="img/vehicule3.png" alt="photo de voiture"> 
+    </div>
+    <div class="col-1"> <img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/254/254434.png" alt="fleche droite">
+    </div>
+    <div class="col-4 col-lg-6 justify-content-start align-items-center pe-2 btnfindepage">
+      <div class="row descpcar">
+      <div class="col-12"><h3>Audi A1</h3></div>
+      <div class="col-12"><p> Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p></div>
+      <p>999€ - Agence de Paris</p>
+    </div>
+    <button class="btn-sm rounded border border-dark p-2 envoibutton" type="submit"> Reserver et payer</button> 
+    </div>
+  </div>
+ <!-- end une case img + desc + BTN -->
+   <!-- START une case img + desc + BTN -->
+   <div class="row d-flex align-items-center mb-5">
+    <div class="col-1 flecheleft"><img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/45/45050.png" alt="fleche gauche">
+    </div>
+    <div class="col-6 col-lg-4">
+      <img class="col-12" src="img/vehicule4.png" alt="photo de voiture"> 
+    </div>
+    <div class="col-1"> <img class="iconwidth" src="https://cdn-icons-png.flaticon.com/512/254/254434.png" alt="fleche droite">
+    </div>
+    <div class="col-4 col-lg-6 justify-content-start align-items-center pe-2 btnfindepage">
+      <div class="row descpcar">
+      <div class="col-12"><h3>Opel Mokla</h3></div>
+      <div class="col-12"><p> Diesel, 5 portes, GPS, auto radio, Forfait 1000km (0.5/km supplémentaire)</p></div>
+      <p>999€ - Agence de Paris</p>
+    </div>
+    <button class="btn-sm rounded border border-dark p-2 envoibutton" type="submit"> Reserver et payer</button> 
+    </div>
+  </div>
+ <!-- end une case img + desc + BTN -->
+
+</div>
+
+<!-- script js bootsrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+

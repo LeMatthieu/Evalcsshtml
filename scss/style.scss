@@ -1,0 +1,127 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+
+@mixin bordermenu {
+    border-radius: none !important;
+    border-width: 2px !important ;
+    border-style: solid !important ;
+}
+
+.fwtitle{
+
+    font-weight: 500 !important;
+}
+
+
+.navbar-toggler {
+    border-color: $light;
+}
+/* Setting the stroke to white using rgb values (256, 256, 256) */
+.navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256, 256, 256, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#submbtn{
+
+    background-color:rgba(46, 204, 113,0.90);
+    color:white;
+}
+body{margin: 0;
+padding:0;}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black !important ; 
+    opacity: 1 !important ; /* Firefox */
+  }
+
+  .buttonrad{
+    @include bordermenu;
+  }
+.iconwidth{
+    width: 10px;
+    height:20px;
+}
+
+#ddbtn{
+
+    background-color: rgb(165, 165, 165);
+    
+    
+
+}
+
+.envoibutton {
+
+    background-color: rgb(72, 174, 72);
+    color: white;
+
+}
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#bgopa{
+
+    background-color: rgba(165,165,165,0.75);
+}
+
+#bgopanone{
+
+    background-color: rgba(165,165,165,0);
+}
+.bootstrap-iso{
+
+    background-color: transparent;
+}
+
+@media screen and (max-width:"996px") {
+
+    #btnfindepage{
+        display: flex !important;
+        justify-content: end !important ;
+        
+        
+    }
+
+    #bgopa{
+
+        margin: 0px !important ;
+    }
+    .descpcar{
+        display: none !important;
+    }
+
+}
+
+
+@media screen and (max-width:"576px") {
+    
+
+.btnfindepage{
+
+    font-size: 10px;
+    
+    
+}
+#ddbtn{
+
+    font-size: 10px;
+    
+}
+#blocform{
+
+    display: flex !important ;
+    justify-content: center !important ;
+}
+}
+
+.flecheleft{
+
+    display: flex!important;
+    justify-content: end !important;
+}
