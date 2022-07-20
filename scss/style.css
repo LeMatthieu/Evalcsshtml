@@ -10886,6 +10886,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .fwtitle {
   font-weight: 500 !important;
 }
@@ -10971,6 +10982,9 @@ body {
     margin: 0px !important;
   }
   .descpcar {
+    display: none !important;
+  }
+  footer {
     display: none !important;
   }
 }
